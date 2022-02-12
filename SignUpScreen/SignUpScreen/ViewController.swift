@@ -8,12 +8,11 @@
 import UIKit
 
 class ViewController: UIViewController {
-    
+    //MARK: Properties
     @IBOutlet var labelReg: UILabel!
     @IBOutlet var emailField: UITextField!
     @IBOutlet var passField: UITextField!
     @IBOutlet var buttonNext: UIButton!
-
 
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -22,8 +21,6 @@ class ViewController: UIViewController {
         labelReg.text = "Register"
         labelReg.font = UIFont(name: "Verdana", size: 30)
         labelReg.textColor = .black
-        
-      
         
         // MARK: Email Text Field
         emailField.placeholder = "jane@example.com"
@@ -43,7 +40,6 @@ class ViewController: UIViewController {
         buttonNext.setTitleColor(.white, for: .normal)
         buttonNext.backgroundColor = .black
         buttonNext.titleLabel?.font = UIFont(name: "Roboto", size: 13)
-        // set font roboto and text size 13px
     }
 
 
